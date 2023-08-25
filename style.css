@@ -1,0 +1,224 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend+Mega:wght@100;200;300;400;500;600;700;800;900&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: #000 3px solid;
+  border-radius: 10px;
+  width: 50vw;
+  min-width: 45 0px;
+  height: auto;
+}
+.topBar {
+  font-family: "Public Sans", sans-serif;
+  font-weight: 400;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: -2px;
+  height: 4vh;
+  background-color: white;
+  margin-bottom: 3vh;
+  border: #000 1px solid;
+  align-items: center;
+  justify-content: left;
+  align-self: center;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.Btn {
+  padding: 0 10px;
+  display: flex;
+  direction: row;
+  align-self: center;
+  align-items: center;
+}
+.round-button {
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  margin: 0 4px;
+  width: 15px;
+  height: 15px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 7px;
+  color: white;
+}
+.red {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+.green {
+  background-color: rgba(0, 255, 0, 0.7);
+}
+.red:hover {
+  background-color: red;
+}
+.green:hover {
+  background-color: green;
+}
+.yellow {
+  background-color: #ffff00;
+  border-radius: 0 0 15px 15px;
+  border-top: white 4px solid;
+}
+.purple {
+  background-color: #ff00f5;
+  padding-bottom: 5vh;
+  border-radius: 15px 15px 0 0;
+}
+
+.title {
+  display: flex;
+  text-align: right;
+  font-family: "Lexend Mega", sans-serif;
+  font-weight: 800;
+  font-size: 1.2em;
+  height: 20vh;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-start; /* align horizontal */
+}
+a {
+  font-family: archivo, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+}
+h1 {
+  font-weight: 800;
+  word-wrap: normal;
+  padding: 15px;
+  border-right: #fff 5px double;
+  border-bottom: #fff 5px double;
+  color: #fff;
+  background-color: #000;
+}
+fieldset {
+  margin: 5vh 0;
+  max-width: 95vw;
+  min-width: 200px;
+  padding: 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  background-color: #2fff2f;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+legend {
+  text-align: center;
+  padding: 5px 10px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.component {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2px;
+}
+
+.row {
+  text-align: right;
+}
+
+input,
+select,
+option {
+  background-color: rgb(240, 240, 240);
+  font-family: "Archivo", sans-serif;
+  font-weight: 800;
+}
+/* Tamanhos e paddings */
+.widthCommon {
+  border-radius: 5px;
+  padding: 0 5px;
+  min-width: 180px;
+  width: 30vw;
+  max-width: 20vw;
+}
+
+.confirm {
+  margin-bottom: 4vh;
+  max-width: 95vw;
+  min-width: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear button {
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 25px;
+  font-size: 25px;
+  background-color: rgb(255, 73, 16);
+  color: #fff;
+  cursor: pointer;
+}
+.clear button:hover {
+  background-color: rgb(255, 107, 107);
+}
+.submit button {
+  border-radius: 10px;
+  margin-left: 20px;
+  padding: 25px 50px;
+  font-size: 25px;
+  background-color: rgb(46, 255, 46);
+  color: #fff;
+  cursor: pointer;
+}
+.submit button:hover {
+  background-color: rgb(145, 237, 145);
+}
+.Btn-Group {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  margin: 0 10px;
+}
+.response {
+  min-width: 400px;
+  padding: 20px;
+  border-radius: 10px;
+  height: 10vh;
+  width: 28vw;
+  background-color: #fff;
+}
+.responseText {
+  font-size: 12pt;
+}
+
+.parallax-effect {
+  transition: transform 0.01s ease-in-out;
+}
+
+.box-shadow {
+  transition: transform 0.01s ease-in-out;
+  box-shadow: var(--ShadowX, 4px) var(--ShadowY, 6px) #000;
+}

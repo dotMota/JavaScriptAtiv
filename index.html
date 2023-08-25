@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão Funcionário</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="content purple parallax-effect box-shadow">
+
+        <span class="topBar">
+            <span class="Btn">
+                <button class="round-button red">
+                    <i class="fas fa-close"></i>
+                </button>
+                <button class="round-button green">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </span>
+            <a href="http://github.com/dotmota" target="_blank">
+                <p>https://github.com/dotmota</p>
+            </a>
+
+        </span>
+        <span class="title">
+            <h1 class="">Cadastro de Funcionários</h1>
+        </span>
+
+    </div>
+    <div class="content yellow parallax-effect box-shadow">
+        <section>
+            <fieldset class="parallax-effect box-shadow">
+                <legend>Dados Pessoais</legend>
+                <form id="EmployeeForm">
+
+                    <div class="component">
+                        <div class="row widthCommon">
+                            <label for="name">Nome Completo:</label>
+                        </div>
+                        <input class="widthCommon" type="text" id="name" required>
+                    </div>
+
+                    <div class="component">
+                        <div class="row widthCommon">
+                            <label for="dateBirth">Data de Nascimento:</label>
+                        </div>
+                        <input class="widthCommon" type="date" id="dateBirth" required>
+                    </div>
+
+                </form>
+            </fieldset>
+
+            <fieldset class="parallax-effect box-shadow">
+                <legend>Dados Profissionais</legend>
+                <form id="EmployeeForm">
+
+                    <div class="component">
+                        <div class="row widthCommon">
+                            <label for="office">Cargo:</label>
+                        </div>
+                        <select class="widthCommon" id="office" required>
+                            <option value="" disabled selected>Selecione um cargo</option>
+                            <option value="Gerente">Gerente</option>
+                            <option value="Desenvolvedor">Desenvolvedor</option>
+                        </select>
+                    </div>
+
+                    <div class="component" id="departmentField">
+                        <div class="row widthCommon">
+                            <label for="department">Departamento:</label>
+                        </div>
+                        <select class="widthCommon" id="department" required>
+                            <option value="" disabled selected>Selecione um departamento</option>
+                            <option value="Desenvolvimento de Software">Desenvolvimento de Software</option>
+                            <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                            <option value="Projetos Digitais">Projetos Digitais</option>
+                        </select>
+                    </div>
+
+                    <div class="component" id="languageField">
+                        <div class="row widthCommon">
+                            <label for="language">Linguagem de Programação:</label>
+                        </div>
+                        <select class="widthCommon" id="language" required>
+                            <option value="" disabled selected>Selecione uma linguagem</option>
+                            <option value="JavaScript">JavaScript</option>
+                            <option value="Python">Python</option>
+                            <option value="Java">Java</option>
+                            <option value="C++">C++</option>
+                            <option value="Ruby">Ruby</option>
+                            <option value="PHP">PHP</option>
+                            <option value="Swift">Swift</option>
+                            <option value="C#">C#</option>
+                            <option value="Kotlin">Kotlin</option>
+                            <option value="TypeScript">TypeScript</option>
+                        </select>
+                    </div>
+                </form>
+            </fieldset>
+            <div class="confirm">
+                <span class="response box-shadow parallax-effect" id="response">
+                    <span class="responseText" id="responseText"></span>
+                </span>
+                <div class="btn-group">
+                    <span class="clear">
+                        <button id="clearButton" class="fas fa-eraser box-shadow parallax-effect"></button>
+                    </span>
+                    <span class="submit ">
+                        <button id="submitButton" class="fas fa-arrow-circle-right box-shadow parallax-effect"></button>
+                    </span>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="style.js"></script>
+</body>
+
+</html>
